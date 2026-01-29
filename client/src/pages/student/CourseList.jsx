@@ -15,6 +15,7 @@ const CourseList = () => {
       const tempCourse = allCourses.slice()
 
       input ? 
+      // eslint-disable-next-line
       setFilteredCourse(
         tempCourse.filter(
           item=> item.courseTitle.toLowerCase().includes(input.toLowerCase())
