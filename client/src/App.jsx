@@ -12,6 +12,7 @@ import AddCourse from './pages/educator/AddCourse'
 import MyCourses from './pages/educator/MyCourses'
 import Navbar from './components/student/Navbar'
 import Footer from './components/student/Footer'
+import StudentsEnrolled from './pages/educator/StudentsEnrolled'
 
 const App = () => {
 
@@ -28,10 +29,10 @@ const App = () => {
         <Route path='player/:courseId' element={<Player />}/>
         <Route path='loading/:path' element={<Loading />}/>
         <Route path='/educator' element={<Educator />}>
-          <Route  path='educator' element={<Dashboard />}/>
+          <Route  path='/educator' element={<Dashboard />}/>
           <Route  path='add-course' element={<AddCourse />}/>
-          <Route  path='my-course' element={<MyCourses />}/>
-          <Route  path='student-entrolled' element={<MyEnrollments />}/>
+          <Route  path='my-courses' element={<MyCourses />}/>
+          <Route  path='student-enrolled' element={<StudentsEnrolled />}/>
           {/* <Route  path='my-course' element={<MyCourses />}/> */}
         </Route>
         {/* <Footer /> */}

@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center text-xs md:text-sm text-white/60 py-4">Copyright 2025 © LMS. All rights reserved.</p>
+      <p className="text-center text-xs md:text-sm text-white/60 py-4">Copyright 2026 © LMS. All rights reserved.</p>
     </footer>
   )
 }
