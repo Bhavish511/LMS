@@ -165,7 +165,7 @@ const AddCourse = () => {
           />
         </div>
         {/* Adding Chapters & Lectures */}
-        <di>
+        <div>
           {chapters.map((chapter, chapterIndex) => (
             <div key={chapterIndex} className="bg-white border rounded-lg mb-4">
               <div className="flex justify-between items-center p-4 border-b">
@@ -280,7 +280,7 @@ const AddCourse = () => {
               </div> 
             )
           }
-        </di>
+        </div>
         <button type="submit" className="bg-black text-white w-max py-2.5 px-8 rounded my-4">
           ADD
         </button>
