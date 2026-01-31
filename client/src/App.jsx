@@ -13,6 +13,7 @@ import MyCourses from './pages/educator/MyCourses'
 import Navbar from './components/student/Navbar'
 import Footer from './components/student/Footer'
 import StudentsEnrolled from './pages/educator/StudentsEnrolled'
+import "quill/dist/quill.snow.css";
 
 const App = () => {
 
