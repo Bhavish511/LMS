@@ -1,16 +1,51 @@
-# React + Vite
+# LMS - Frontend (Client)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the React frontend for the Learning Management System. It's built with Vite and Tailwind CSS, featuring a responsive and modern user interface for both students and educators.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Authentication**: [Clerk](https://clerk.dev/)
+- **Routing**: [React Router](https://reactrouter.com/)
+- **Rich Text Editor**: [Quill](https://quilljs.com/)
+- **Video Player**: [React YouTube](https://www.npmjs.com/package/react-youtube)
+- **Utilities**: `humanize-duration`, `rc-progress`, `uniqid`
 
-## React Compiler
+## 📁 Key Directories
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/components`: Reusable UI components (Student & Educator specific folders).
+- `src/pages`: Main application views (Dashboard, Course Details, etc.).
+- `src/context`: Application-wide state management.
+- `src/assets`: Static assets like images and icons.
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+2. **Environment Configuration**:
+   Create a `.env` file in the `client` root:
+   ```env
+   VITE_CLERK_PUBLISHABLE_KEY=your_clerk_pub_key
+   VITE_BACKEND_URL=http://localhost:5000
+   ```
+
+3. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for Production**:
+   ```bash
+   npm run build
+   ```
+
+## 🎨 Design System
+
+The project uses Tailwind CSS for styling. Custom configurations can be found in `tailwind.config.js`.
+
+---
+Developed by [Bhavish](https://github.com/Bhavish511)
